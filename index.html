@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ3110PTYG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ3110PTYG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DZ3110PTYG');
+  </script>
 
-  gtag('config', 'G-DZ3110PTYG');
-</script>
-  <!-- 自动跳转 -->
-<meta http-equiv="refresh" content="3;url=https://fffbuy.shop/whatsappautojoin">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🔥 VIP Replica Group</title>
   <meta name="description" content="Join our private shopping group for replica deals and real product videos.">
+
   <style>
     body {
       margin: 0;
@@ -84,8 +83,11 @@
       background-color: #1ea64f;
     }
 
-    .catalog-btn {
-      background-color: #007bff;
+    .jump-tip {
+      color: #888;
+      font-size: 14px;
+      margin-top: -10px;
+      margin-bottom: 12px;
     }
 
     .product-grid {
@@ -108,26 +110,38 @@
       .cta-btn { font-size: 16px; padding: 12px 20px; }
     }
   </style>
+
+  <script>
+    // 自动跳转逻辑
+    setTimeout(function() {
+      gtag('event', 'auto_redirect', { 'event_category': 'engagement', 'event_label': 'Auto WhatsApp' });
+      window.location.href = "https://fffbuy.shop/whatsappautojoin";
+    }, 3000);
+  </script>
 </head>
 <body>
   <div class="container">
-
-    <!-- 顶部主视觉图 -->
+    <!-- 顶图 -->
     <img src="https://cnfans.center/9beb9c6f-86bb-4f4a-8098-3ee611303c29.png" class="hero-img" alt="Main Product Banner" />
 
-    <!-- 标题与引导文案 -->
-    <h1>🔥 New Private Video Shopping Group Just Launched!</h1>
+    <!-- 文案 -->
+    <h1>🔥 VIP Replica Deals Group Just Launched!</h1>
     <div class="features">
       ✅ <span>VIP deals</span>, hot drops & <span>real product videos</span> updated daily<br />
       💬 Order directly in WhatsApp — <span>super convenient</span><br />
-      🚪 Tap to join our Shopping Group,Shipping from China!
+      🎁 Free gifts & daily offers shared in group only!<br />
+      ⏳ Limited slots — <span>auto joining now...</span>
     </div>
 
-    <!-- 按钮组 -->
+    <!-- 自动跳转提示 -->
+    <div class="jump-tip">👉 Jumping to WhatsApp group in 3 seconds...</div>
+
+    <!-- 手动按钮 -->
     <div class="cta-group"> 
-     <a class="cta-btn" href="https://fffbuy.shop/whatsappcta" target="_blank" onclick="gtag('event', 'join_whatsapp_click', { 'event_category': 'engagement', 'event_label': 'WhatsApp CTA' });">
-  👉 Join Now on WhatsApp
-</a>
+      <a class="cta-btn" href="https://fffbuy.shop/whatsappcta" target="_blank"
+        onclick="gtag('event', 'manual_click', { 'event_category': 'engagement', 'event_label': 'Manual WhatsApp Click' });">
+        👆 Join Now on WhatsApp
+      </a>
     </div>
 
     <!-- 买家晒单图 -->
@@ -137,7 +151,6 @@
       <img src="https://cnfans.center/7.png" alt="Buyer Show 3" />
       <img src="https://cnfans.center/4.png" alt="Buyer Show 4" />
     </div>
-
   </div>
 </body>
 </html>
